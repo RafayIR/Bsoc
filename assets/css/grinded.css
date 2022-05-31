@@ -1,0 +1,140 @@
+.grinded-wrapper {
+  background-color: var(--main-color);
+}
+
+.grinded-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 140px;
+  text-align: center;
+}
+
+.grinded-top-img {
+  margin-bottom: 48px;
+}
+
+h1.grinded-heading {
+  color: var(--background-color);
+  font-size: 52px;
+  font-weight: 700;
+  max-width: 420px;
+  margin-bottom: 24px;
+}
+
+p.grinded-para {
+  font-size: 14px;
+  color: #eeeeee;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+.grinded-bottom-slider {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.grinded-bottom-slider .row {
+  width: 50%;
+}
+
+.grinded-bottom-slider .owl-stage .owl-item {
+  opacity: 0.4;
+  transition: 0.4s all;
+}
+
+.grinded-bottom-slider .owl-item.cloned {
+  opacity: 0.4;
+}
+
+.owl-item.active {
+  opacity: 1;
+}
+
+.grinded-wrapper-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grinded-thumbnail-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grinded-rating .fas {
+  color: var(--cart-color);
+  padding-top: 10px;
+  margin-right: 6px;
+  padding-bottom: 7px;
+}
+
+.member-title,
+.member-qoute {
+  color: var(--background-color);
+}
+
+.member-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.member-qoute {
+  max-width: 350px;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.grinded-bottom-slider .col-lg-4 {
+  max-width: 100%;
+  flex: 0 0 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.grinded-bottom-slider button.owl-next {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 576px) {
+  .grinded-top {
+    padding-top: 40px;
+  }
+
+  .grinded-bottom-slider {
+    padding-top: 50px;
+  }
+
+  .grinded-bottom-slider .owl-carousel .owl-nav .owl-prev {
+    display: block;
+  }
+
+  .grinded-bottom-slider button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+  }
+
+  .grinded-bottom-slider button.owl-next {
+    top: 48%;
+  }
+
+  .grinded-bottom-slider button.owl-next img {
+    width: 55%;
+  }
+
+  h1.grinded-heading {
+    font-size: 24px;
+  }
+
+  .grinded-bottom-slider .row {
+    width: 90%;
+  }
+}

@@ -1,0 +1,277 @@
+.top-nav {
+  height: 24px;
+  background-color: var(--main-color);
+  align-items: center;
+  display: flex;
+}
+
+.topnav-main.row {
+  align-items: center;
+}
+
+.top-nav-left li:last-child {
+  margin-left: 32px;
+}
+
+.top-nav-right {
+  text-align: end;
+}
+
+.top-nav ul li {
+  display: inline-block;
+}
+
+.top-nav a {
+  color: var(--topbar-color);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.top-nav-right li {
+  margin-right: 32px;
+}
+
+.top-nav-right li:last-child {
+  margin: 0;
+}
+
+/********MAIN-NAV*********************/
+
+.nav {
+  margin-top: 24px;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.nav .main-nav-right ul li:last-child {
+  margin-right: 0;
+  display: flex;
+}
+
+.main-nav-right ul {
+  display: flex;
+}
+.nav ul li a {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.logo-img {
+  max-width: 100%;
+  margin-right: 48px;
+}
+
+.main-nav-left,
+.main-nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-right {
+  justify-content: end;
+}
+
+.main-nav-right li.navbar-link.pink-circle {
+  position: relative;
+}
+
+li.navbar-link.pink-circle span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--mainaccent-color);
+  border-radius: 50%;
+  top: -4px;
+  right: 0px;
+}
+
+.main-nav-right li:last-child {
+  margin-left: 15px;
+}
+
+li.navbar-link img {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.main-nav-right li.navbar-link {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.main-nav-left li.navbar-link a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background-color: var(--main-color);
+}
+
+.main-nav-left li.navbar-link a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-btn {
+    display: none;
+  }
+  .sidebar-top {
+    display: none;
+  }
+
+  .navbar-link.desktop-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo-img {
+    margin-right: 15px;
+  }
+  .nav ul li {
+    margin-right: 10px;
+  }
+
+  .nav ul li a {
+    letter-spacing: 0.9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-nav,
+  .cart-text,
+  .main-nav-right li.navbar-link.pink-circle span {
+    display: none;
+  }
+
+  .main-nav-left {
+    justify-content: center;
+  }
+
+  .sidebar-top {
+    margin-top: 9px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav .row {
+    align-items: center;
+  }
+
+  .nav {
+    margin-top: 12px;
+  }
+
+  .main-nav-left.col-sm-8 {
+    position: static;
+  }
+
+  .logo-img {
+    margin-right: 0;
+  }
+
+  .toggle-btn button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .toggle-btn button .fas {
+    font-size: 20px;
+  }
+
+  .logo-img img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .main-nav-left nav ul li {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+  }
+
+  .nav .main-nav-right ul li.navbar-link.pink-circle {
+    margin-right: 0;
+  }
+
+  .main-nav-left.col-lg-8.col-md-9.col-lg-8.col-4,
+  .toggle-btn.col-md-1.col-sm-2.col-4 {
+    position: inherit;
+  }
+
+  .nav-container ul li {
+    display: block;
+  }
+  .nav-container {
+    position: absolute;
+    z-index: 5;
+    background-color: var(--background-color);
+    width: 263px;
+
+    left: 0;
+    top: 0;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  .nav-container .site-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 57px;
+    margin-bottom: 48px;
+  }
+
+  .nav-container .site-contact ul li {
+    display: inline-block;
+  }
+
+  .navbar-list .navbar-link {
+    margin-bottom: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .navbar-list .navbar-link {
+    height: 64px;
+    background-color: var(--dark-gold);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .col-lg-3 .product-header .title-card {
+    font-size: 22px;
+  }
+}

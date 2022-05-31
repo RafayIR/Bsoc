@@ -1,0 +1,94 @@
+.reviews h2.course-calender-heading {
+  margin-top: 40px;
+  font-size: 24px;
+  color: var(--main-color);
+}
+
+.reviews .course-discription-content {
+  margin-top: 8px;
+}
+
+.reviews .course-discription-content .detail-content {
+  font-size: 14px;
+}
+
+ol.review-section {
+  margin-top: 40px;
+}
+
+li.review-list {
+  border: 2px solid var(--main-color);
+  display: flex;
+  align-items: flex-start;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 48px;
+  position: relative;
+}
+
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.comment-review .fas {
+  color: var(--cart-color);
+  margin-right: 5px;
+}
+
+.review-title {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.review-title-main {
+  font-size: 24px;
+}
+.varified {
+  margin-left: 16px;
+  color: var(--success-color);
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.varified .fas {
+  color: var(--success-color);
+}
+
+.comment-review {
+  margin-left: 32px;
+}
+.review-content {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.review-qoute {
+  position: absolute;
+  right: 40px;
+  top: -15px;
+}
+
+@media screen and (max-width: 475px) {
+  li.review-list {
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+  }
+
+  .comment-review {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .review-title {
+    flex-direction: column;
+  }
+  .review-content {
+    height: 85px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,146 @@
+*/ {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.container-large {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+}
+
+@media screen and (max-width: 1370px) {
+  .container-max-row,
+  .container.location-row {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 590px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tablet-hide {
+    display: none;
+  }
+
+  .tablet-show {
+    display: block;
+  }
+  .course-wrapper.nav {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-hide-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tablet-hide-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+:root {
+  --main-color: #000000;
+  --secondary-color: #282424;
+  --support-color: #626262;
+  --topbar-color: #7c7c7c;
+  --additional-color-2: #eeeeee;
+  --mainaccent-color: #e40177;
+  --accent-color: #a9855c;
+  --cart-color: #fbb059;
+  --success-color: #27ae60;
+  --alert-color: #d91e18;
+  --bg-color: #f8f7f5;
+  --additional-color: #fff6eb;
+  --percentage-color: #fadaeb;
+  --background-color: #ffffff;
+  --dark-gold: #a9855c;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  font-size: 12px;
+  scroll-behavior: smooth;
+  background-color: #f8f7f5;
+}
+
+.nav {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+button.navbar {
+  padding: 0 4px;
+}

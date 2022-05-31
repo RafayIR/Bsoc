@@ -1,0 +1,279 @@
+.product-details {
+  margin-top: 16px;
+}
+
+.bg-brown {
+  background-color: var(--secondary-color);
+}
+
+.slider-img img {
+  height: 600px;
+  object-fit: cover;
+}
+
+h2.product-title {
+  color: var(--background-color);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.detail-right.col-lg-6 {
+  padding-top: 104px;
+  padding-left: 84px;
+}
+
+.detail-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.detail-rating .read-review {
+  color: var(--dark-gold);
+  margin-left: 16px;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.detail-rating .rating .fas {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 4px;
+  margin-top: 2px;
+  color: var(--cart-color);
+}
+
+.product-discription {
+  color: var(--background-color);
+  font-size: 13px;
+  margin-top: 21px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.product-amount {
+  color: #fbb059;
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.product-dis {
+  color: var(--dark-gold);
+  font-size: 12px;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+.product-dis .fas {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.detail-button {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.when-who-btn .fas {
+  margin-right: 8px;
+}
+
+.when-who-btn {
+  min-width: 96px;
+  height: 48px;
+  color: var(--dark-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.bg-opacity {
+  background-color: rgba(196, 196, 196, 0.2);
+}
+
+.add-btn {
+  display: none;
+}
+
+.pay-later {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cart-color);
+  font-size: 12px;
+  font-weight: 700;
+  width: 240px;
+  height: 48px;
+  letter-spacing: 2px;
+}
+
+/****************RESPONSIVE******************/
+
+@media screen and (min-width: 576px) {
+  .mobile-visible-slider.owl-carousel-9.owl-carousel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .detail-right.col-lg-6 {
+    padding-left: 30px;
+  }
+
+  .pay-later {
+    width: 225px;
+  }
+
+  .slider-image-small {
+    left: -82px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .detail-right.col-lg-6 {
+    padding-top: 100px;
+  }
+
+  .slider-img img {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h2.product-title {
+    font-size: 22px;
+  }
+  .detail-rating .rating .fas {
+    font-size: 10px;
+  }
+
+  .product-discription {
+    font-size: 12px;
+    height: 53px;
+    overflow: hidden;
+  }
+
+  .product-amount {
+    font-size: 24px;
+  }
+
+  .product-dis {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .when-who-btn {
+    min-width: 80px;
+    height: 38px;
+    margin-right: 10px;
+  }
+
+  .pay-later {
+    width: 160px;
+    height: 38px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .detail-right.col-lg-6 {
+    padding-top: 36px;
+  }
+  .pay-later {
+    margin-top: 0;
+  }
+  .product-price {
+    margin-top: 12px;
+  }
+  .detail-button {
+    padding-bottom: 40px;
+  }
+  .slider-img img {
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .detail-wrapper .detail-right.col-lg-6 {
+    padding-top: 40px;
+    padding-left: 16px;
+  }
+
+  div#sync1,
+  div#sync2 {
+    display: none;
+  }
+
+  .mobile-visible-slider.owl-carousel-9.owl-carousel button.owl-next,
+  .mobile-visible-slider.owl-carousel-9.owl-carousel button.owl-prev {
+    position: absolute;
+    right: 0;
+    top: 27%;
+    width: 56px;
+    font-size: 36px;
+    height: 80px;
+    background-color: rgba(40, 36, 36, 0.5);
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-visible-slider.owl-carousel-9.owl-carousel .owl-nav .owl-prev {
+    display: block;
+    left: 0;
+  }
+
+  .discription-details h2.product-title {
+    font-size: 21px;
+  }
+
+  .product-discription {
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .discription-details .product-amount {
+    font-size: 20px;
+  }
+  .discription-details .product-price {
+    margin-top: 4px;
+  }
+
+  .discription-details .when-who-btn {
+    width: 140px;
+  }
+
+  .book-now {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .book-now .pay-later {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .detail-button {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .detail-button {
+    justify-content: space-between;
+  }
+  .when-who-btn {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,208 @@
+.roasted {
+  margin-top: 88px;
+}
+
+.roasted-header .row {
+  align-items: center;
+}
+
+.roasted-cookie {
+  text-align: end;
+}
+
+.roasted-wrapper {
+  background-color: var(--percentage-color);
+}
+
+.roasted-header {
+  padding: 96px 98px;
+}
+
+h1.roasted-title {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.smoke {
+  position: absolute;
+  top: -140px;
+  right: 90px;
+}
+
+/*************ROASTED-BOTTOM*******/
+
+.roasted-bottom {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-bottom: 96px;
+  background-color: var(--percentage-color);
+}
+
+.roasted-bottom .col-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  padding-bottom: 24px;
+}
+
+.roasted-bottom .roasted-discription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 170px;
+}
+
+.trainers {
+  display: flex;
+}
+
+.roasted .row {
+  margin: 0 0;
+}
+
+.row.team-wrapper button.owl-next {
+  display: none;
+}
+
+.row.team-wrapper .col-lg-12.trainers {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .roasted-para-mobile,
+  .meet-trainers-btn,
+  .col-title-arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .owl-stage {
+    padding-right: 0 !important;
+  }
+
+  .roasted-header {
+    padding: 40px 40px;
+  }
+
+  h1.roasted-title {
+    font-size: 44px;
+  }
+
+  .smoke {
+    top: -90px;
+    right: 100px;
+  }
+
+  .smoke img {
+    max-width: 75%;
+  }
+
+  .roasted-bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .roasted-bottom .roasted-discription {
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .row.team-wrapper .owl-stage {
+    padding-right: 0 !important;
+  }
+
+  h1.roasted-title {
+    font-size: 36px;
+  }
+  .roasted-header .col-lg-5.site-mobile-hide {
+    display: none;
+  }
+
+  .roasted .row {
+    margin-right: 0;
+    flex-direction: column-reverse;
+  }
+
+  div#accordion {
+    flex-direction: row;
+    margin-top: 25px;
+  }
+
+  div#accordion .col-md-6 {
+    padding-bottom: 30px;
+  }
+
+  .roasted-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .roasted-bottom .roasted-discription {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .roasted {
+    margin-top: 0;
+  }
+
+  .roasted-bottom .col-title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  .col-title-arrow {
+    margin-left: auto;
+    display: block;
+  }
+
+  .roasted-wrapper {
+    background-color: transparent;
+    margin-top: 25px;
+  }
+
+  .roasted-header h1.roasted-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .roasted-header {
+    padding: 0;
+    text-align: center;
+  }
+
+  .roasted-para-mobile {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  .roasted-bottom {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .trainers-img {
+    padding: 10px;
+  }
+
+  .meet-trainers-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .meet-trainers-btn .ghost-button {
+    border: 2px solid var(--main-color);
+    margin-top: 24px;
+    color: #000;
+    display: flex;
+  }
+}

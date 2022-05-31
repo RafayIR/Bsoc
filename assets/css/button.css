@@ -1,0 +1,51 @@
+.ghost-button {
+  background-color: transparent;
+  border: 2px solid var(--cart-color);
+  color: var(--cart-color);
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 16px 28px;
+}
+
+.ghost-button.btn {
+  display: flex;
+  align-items: center;
+  width: 226px;
+  height: 48px;
+}
+
+.ghost-button:hover {
+  color: var(--cart-color);
+}
+
+.ghost-button.btn img {
+  padding-left: 14px;
+}
+
+.banner-bottom {
+  position: absolute;
+  bottom: 25px;
+  padding-left: 96px;
+}
+
+.banner-bottom ul li.banner-bottom-list {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.banner-bottom-link {
+  display: flex;
+  align-items: center;
+  color: var(--cart-color);
+}
+
+a.banner-bottom-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.banner-bottom-text {
+  margin-left: 8px;
+}

@@ -1,0 +1,206 @@
+.course-tabs {
+  margin-top: 72px;
+}
+
+.tabs ul.course-wrapper li.tabs-list {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+li.tabs-list.popular-courses-top a {
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+
+ul.course-wrapper li a.active {
+  border-bottom: 2px solid var(--main-color);
+}
+ul.course-wrapper.nav-tabs {
+  border-bottom: none;
+}
+
+.course-discription-content {
+  margin-top: 40px;
+}
+
+.course-discription-content .detail-content {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+h2.course-calender-heading {
+  margin-top: 48px;
+  font-size: 32px;
+  color: var(--mainaccent-color);
+}
+
+.month-dropdown {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 8px;
+  margin-top: 24px;
+}
+
+h2.related-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.related-products {
+  margin-top: 88px;
+}
+
+.related-row {
+  margin-top: 24px;
+}
+
+.related-products .popular-courses-right {
+  width: 100%;
+}
+
+.recent {
+  margin-top: 74px;
+}
+
+.recent-view-row {
+  width: 51%;
+}
+
+.recent-view-row .col-lg-3 {
+  margin-top: 24px;
+  max-width: 100%;
+}
+
+.related-products .popular-courses-right .col-lg-4,
+.recent-view-row .col-lg-3 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/**************SLIDER-IMG************/
+
+.slider-image-small {
+  width: 50%;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  left: -101px;
+}
+div#sync1 {
+  z-index: 0;
+}
+
+div#sync2 {
+  width: 100%;
+}
+
+.detail-wrapper .col-lg-6 {
+  position: relative;
+}
+
+.slider-image-small .item {
+  transform: rotate(90deg);
+}
+
+div#sync2 button.owl-next {
+  display: none;
+}
+
+div#sync1 button.owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 45px;
+  font-size: 36px;
+  height: 80px;
+  background-color: rgb(255 255 255 / 30%);
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-view-row button.owl-next {
+  display: none;
+}
+
+/****************RESPONSIVE******************/
+
+@media screen and (max-width: 1200px) {
+  .related-row button.owl-next {
+    right: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  .tabs ul.course-wrapper li.tabs-list {
+    margin-right: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  ul.course-wrapper.nav.nav-tabs {
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .tabs ul.course-wrapper li.tabs-list {
+    padding-bottom: 15px;
+  }
+
+  .recent-view-row {
+    width: 100%;
+  }
+
+  .course-tabs {
+    margin-top: 40px;
+  }
+  .course-discription-content {
+    margin-top: 0;
+  }
+
+  .related-row button.owl-next {
+    display: none;
+  }
+  h2.related-title {
+    font-size: 24px;
+  }
+
+  .related-products .col-sm-12,
+  .recent .col-sm-12 {
+    text-align: center;
+  }
+  .recent-view-row .thumbnail-img img {
+    width: 408px;
+  }
+
+  .recent-view-row .col-12 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recent-view-row {
+    width: 100%;
+  }
+  ul.course-wrapper.nav.nav-tabs {
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .tabs ul.course-wrapper::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+  }
+}

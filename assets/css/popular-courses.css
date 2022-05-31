@@ -1,0 +1,227 @@
+.popular {
+  margin-top: 50px;
+  padding-bottom: 88px;
+}
+
+.popular-courses-top ul li {
+  display: inline-block;
+}
+
+.popular-courses-top ul > li + li {
+  padding-left: 15px;
+}
+
+.popular-courses-top ul li.active a {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.popular-courses-top ul li a {
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+
+.popular-courses-top .row {
+  justify-content: end;
+}
+
+.popular-courses-top {
+  text-align: end;
+}
+
+.course-discription title {
+  display: block;
+}
+
+/*************POPULAR-COURSES-BOTTOM****************/
+
+.popular-courses-bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-courses-left {
+  width: 25%;
+}
+
+.popular-courses-right {
+  width: 75%;
+}
+
+.popular-courses-right .col-lg-4 {
+  max-width: 100%;
+}
+.popular-courses-bottom .col-lg-3 {
+  padding-left: 8px;
+  padding-right: 8px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.popular-courses-bottom .col-lg-4 {
+  padding-left: 8px;
+  padding-right: 8px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.thumbnail-wrapper {
+  position: relative;
+}
+
+.thumbnail-wrapper .badge {
+  position: absolute;
+  background-color: var(--percentage-color);
+  width: 132px;
+  height: 32px;
+  line-height: 26px;
+  border-radius: 0;
+  letter-spacing: 2px;
+  left: 0;
+  top: 16px;
+  z-index: 4;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.col-lg-4 .thumbnail-img img {
+  width: 365px;
+}
+
+.popular-courses-bottom {
+  padding-top: 24px;
+}
+
+.product-header .title-card {
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 250px;
+}
+
+.title-para {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 24px;
+  line-height: 24px;
+}
+
+.product-wrapper {
+  background-color: var(--background-color);
+  border: 1px solid transparent;
+}
+
+.product-wrapper:hover {
+  border: 1px solid var(--percentage-color);
+}
+
+.content-wrapper {
+  padding: 16px;
+  position: relative;
+}
+
+.content-wrapper .title-card {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  padding-top: 16px;
+  font-weight: 700;
+  height: 64px;
+  overflow: hidden;
+}
+
+.content-wrapper .rating .fas {
+  font-size: 10px;
+  font-weight: 600;
+  margin-right: 4px;
+  margin-top: 2px;
+  color: var(--cart-color);
+}
+
+.course-discription {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 23px;
+}
+
+.course-discription a {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.course-amount,
+.price-dis {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--mainaccent-color);
+}
+
+.price-dis {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.product-wrapper:hover .add-to-cart {
+  visibility: visible;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .popular-courses-left {
+    width: 40%;
+  }
+  .popular-courses-right {
+    width: 60%;
+  }
+  .popular {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .popular-courses-top.tabs {
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 15px;
+  }
+
+  .popular-courses-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .popular-courses-left {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .product-header .title-card {
+    max-width: 100%;
+  }
+
+  .popular-courses-right {
+    width: 100%;
+  }
+
+  .popular-courses-top.tabs::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+
+  .popular-courses-bottom button.owl-next {
+    display: none;
+  }
+}

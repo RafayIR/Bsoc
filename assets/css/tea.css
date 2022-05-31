@@ -1,0 +1,23 @@
+.cup-of-tea {
+  margin-top: 104px;
+}
+
+.tea-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 75px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .cup-of-tea {
+    margin-top: 40px;
+  }
+
+  .tea-middle {
+    padding-bottom: 0;
+    margin-bottom: 94px;
+  }
+}

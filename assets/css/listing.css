@@ -1,0 +1,282 @@
+.courses-wrapper {
+  margin-top: 72px;
+  padding-bottom: 28px;
+}
+
+.courses-wrapper .row {
+  align-items: center;
+}
+
+h1.course-title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.course-img-wrapper {
+  text-align: center;
+}
+
+.listing {
+  margin-top: 24px;
+  padding-bottom: 88px;
+}
+
+.listing-left .sidebar {
+  margin-top: 43px;
+}
+
+.listing-left li.menu-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.listing-right .col-lg-4 {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 40px;
+}
+
+.col-lg-4 .thumbnail-img img {
+  width: 538px;
+}
+
+a.clear-all {
+  display: block;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mainaccent-color);
+}
+
+h3.sidebar-title {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  font-family: "Mulish", sans-serif;
+}
+
+a.clear-all {
+  text-decoration: underline;
+}
+
+.checkbox-filter {
+  margin-top: 24px;
+  margin-bottom: 64px;
+}
+
+ul.sidebar-list > li.menu-list {
+  margin-bottom: 16px;
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+}
+
+.why-us {
+  margin-top: 32px;
+}
+
+.whyus-list {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+a.whylist-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dark-gold);
+}
+
+a.whylist-link img {
+  padding-right: 10px;
+}
+
+/*****************PAGINATION********************/
+
+ul.pagination-wrapper li.pagination-no {
+  display: inline-block;
+}
+ul.pagination-wrapper > li {
+  margin-right: 14px;
+}
+.pagination.col-lg-12 {
+  padding-left: 8px;
+  padding-top: 16px;
+}
+
+a.pagination-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+  width: 56px;
+  height: 48px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+a.pagination-box:hover {
+  color: var(--mainaccent-color);
+}
+
+a.pagination-box.next {
+  width: 114px;
+}
+
+/*****************RESPONSIVE******************/
+
+@media screen and (min-width: 767px) {
+  .sidebar .collapse:not(.show),
+  .team-wrapper .collapse:not(.show) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  a.drop-down-arrow.right-course-arrow-down {
+    position: inherit;
+  }
+
+  .course-to-master-banner,
+  label.showing-course {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 940px) {
+  .thumbnail-wrapper .badge {
+    width: 108px;
+    height: 24px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  li.pagination-no.mobile-hide-list {
+    padding-bottom: 15px;
+  }
+
+  a.pagination-box {
+    width: 37px;
+    height: 40px;
+  }
+
+  .sidebar-mobile-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background-color: var(--secondary-color);
+    color: #f8f7f5;
+    font-size: 12px;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .course-title {
+    display: block;
+    padding-right: 5px;
+  }
+  .listing-left .sidebar-title {
+    padding-left: 24px;
+    margin-top: 30px;
+  }
+
+  .listing-left .clear-all,
+  .listing-left .checkbox-filter {
+    padding-left: 24px;
+  }
+  .listing-right .listing-filters .col-lg-12 {
+    display: block;
+  }
+  .view-course {
+    background-color: var(--dark-gold);
+  }
+
+  .sorting-drop-down-wrapper {
+    background-color: var(--additional-color);
+    color: var(--main-color);
+  }
+  a.right-course-arrow-down {
+    padding-left: 10px;
+    position: absolute;
+    right: 18px;
+  }
+
+  a.drop-down-arrow.right-course-arrow-down {
+    right: 14px;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .listing {
+    margin-top: 0;
+    padding-bottom: 25px;
+  }
+
+  .courses-wrapper {
+    margin-top: 30px;
+  }
+
+  .courses-wrapper .col-lg-5 {
+    display: none;
+  }
+
+  .course-to-master-banner .banner-bottom {
+    position: inherit;
+    margin-top: 72px;
+    padding-left: 5px;
+    width: 100%;
+  }
+
+  .banner-bottom ul::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+
+  .listing-filters {
+    margin-bottom: 25px;
+  }
+
+  .listing-left .sidebar {
+    margin-top: 15px;
+  }
+
+  .sorting-drop-down-wrapper .sorting-title {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+
+  .listing-right .col-lg-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pagination.col-lg-12 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .showing-course {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  ul.pagination-wrapper > li {
+    margin-right: 0;
+    padding-top: 35px;
+  }
+
+  .pagination-wrapper .pagination-no.mobile-hide-list {
+    display: none;
+  }
+}

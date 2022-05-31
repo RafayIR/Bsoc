@@ -1,0 +1,280 @@
+.blog-hero {
+  margin-top: 48px;
+}
+
+.services ul li.consult-list {
+  display: inline-block;
+}
+
+.row.services {
+  align-items: center;
+}
+
+.services .course-wrapper.nav {
+  margin-top: 6px;
+}
+
+h1.services-heading.col-lg-3 {
+  font-weight: 700;
+}
+
+li.consult-wrapper-list {
+  margin-right: 40px;
+}
+
+li.tabs-list.popular-courses-top.consult-wrapper-list a {
+  font-size: 14px;
+}
+
+.consult-the-best {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.background-frame-1 {
+  position: relative;
+  width: 100%;
+}
+
+.row.the-best {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container.bg-img {
+  position: relative;
+}
+
+h1.the-best-title {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.advice-img-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.advice {
+  margin-top: 64px;
+  border: 2px solid var(--main-color);
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: var(--background-color);
+  z-index: 10;
+}
+
+.advice-para {
+  padding-top: 50px;
+  padding-left: 36px;
+  max-width: 40%;
+}
+
+h2.advice-title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+p.advice-para-wrapper {
+  font-size: 16px;
+  line-height: 32px;
+  margin-top: 48px;
+}
+
+.row.advice-row {
+  position: relative;
+  justify-content: center;
+}
+
+.container.bg-img::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/services-blog-img/bg-img-2.png);
+  left: calc(-8% - 1px);
+  top: -28px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 435px;
+  z-index: 8;
+}
+
+.container.bg-img::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/services-blog-img/bg-img-1.png);
+  right: calc(-1% - 1px);
+  top: -28px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  max-width: 167px;
+  z-index: 8;
+}
+
+.row.entre-preneurs {
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+
+/*******************RESPONSIVE**************/
+
+@media screen and (max-width: 992px) {
+  .advice-wrapper {
+    padding: 16px;
+  }
+
+  .container.bg-img::after {
+    right: calc(-3% - 1px);
+  }
+  ul.course-wrapper::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  li.consult-wrapper-list {
+    margin-right: 22px;
+  }
+  .row.advice-row {
+    text-align: center;
+  }
+  ul.course-wrapper.consult-wrapper.nav.nav-tabs.col-12 {
+    padding-left: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advice .advice-wrapper {
+    padding: 30px;
+  }
+
+  ul.course-wrapper::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .row.entre-preneurs {
+    position: relative;
+  }
+
+  li.consult-wrapper-list {
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  .advice-img-wrapper {
+    justify-content: center;
+  }
+
+  h1.the-best-title {
+    font-size: 36px;
+  }
+  .advice-para {
+    padding-top: 25px;
+    max-width: 100%;
+  }
+  p.advice-para-wrapper {
+    line-height: 26px;
+    margin-top: 20px;
+  }
+
+  .container.bg-img::after,
+  .container.bg-img::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .advice .advice-wrapper {
+    padding: 0px;
+  }
+
+  .advice-img-wrapper.col-lg-6.col-md-6.col-sm-12.col-12 {
+    text-align: center;
+  }
+
+  .background-frame-1 {
+    background-image: none;
+  }
+
+  .row.the-best {
+    padding-top: 0;
+  }
+
+  .advice {
+    border: none;
+  }
+
+  .advice-wrapper {
+    padding: 0;
+  }
+
+  h1.the-best-title {
+    font-size: 32px;
+  }
+
+  ul.course-wrapper.consult-wrapper.nav.nav-tabs.col-12 {
+    padding-left: 16px;
+  }
+
+  li.consult-wrapper-list {
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  li.tabs-list.popular-courses-top.consult-wrapper-list a {
+    padding-bottom: 8px;
+  }
+
+  .advice-para {
+    position: absolute;
+    padding-left: 10px;
+    left: 13px;
+    top: 40px;
+    width: 100%;
+    max-width: 290px;
+    height: 430px;
+    z-index: 5;
+    background-color: rgba(248, 247, 245, 0.9);
+    text-align: center;
+    border: 2px solid var(--main-color);
+  }
+
+  .advice-img-wrapper.col-lg-6.col-12 {
+    padding: 0;
+  }
+
+  .advice-img img {
+    min-width: 100%;
+    height: 510px;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .advice-img::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1)
+    );
+  }
+
+  h2.advice-title {
+    font-size: 24px;
+  }
+  p.advice-para-wrapper {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+}
